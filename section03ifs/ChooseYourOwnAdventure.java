@@ -30,7 +30,7 @@ public class ChooseYourOwnAdventure
           "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
       askAQuestion("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
       //         If they answer "toilet" --#8.1
-      if ("toilet".equals(action))
+      if ("toilet".equalsIgnoreCase(action))
       {
         //            pourIntoToilet (recipe below) --#12.1
         //            ------------- Recipe for pourIntoToilet --#12.2
@@ -47,7 +47,8 @@ public class ChooseYourOwnAdventure
         //            ------------- End of pourIntoToilet recipe --#12.3
       }
       //         Otherwise, if they answer "backyard" --#8.2
-      if ("backyard".equals(action))
+      else if ("backyard".equalsIgnoreCase(action))
+        ;
       {
         //            pourIntoBackyard (recipe below) --#19.1
         //            ------------- Recipe for pourIntoBackyard --#19.2
