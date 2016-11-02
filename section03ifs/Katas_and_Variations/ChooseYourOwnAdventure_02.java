@@ -1,4 +1,4 @@
-package org.teachingkidsprogramming.section03ifs;
+package org.teachingkidsprogramming.section03ifs.Katas_and_Variations;
 
 import java.awt.Color;
 
@@ -7,7 +7,7 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
-public class ChooseYourOwnAdventure
+public class ChooseYourOwnAdventure_02
 {
   public static void main(String[] args)
   {
@@ -15,17 +15,16 @@ public class ChooseYourOwnAdventure
   }
   private static void startStory()
   {
-    tellMoreStory("One morning the Tortoise woke up in a dream.");
+    tellMoreStory("One morning the Tortoise woke up from a dream.");
     animateStartStory();
-    String action = askAQuestion("Do you want to 'wake up' or 'explore' the dream?");
-    if ("wake up".equalsIgnoreCase(action))
+    String action = askAQuestion("Do you want to 'get up' or 'go back to sleep'?");
+    if ("get up".equalsIgnoreCase(action))
     {
-      tellMoreStory("You wake up and have a boring day. The end.");
+      tellMoreStory("You get up and have a boring day. The end.");
     }
-    else if ("explore".equalsIgnoreCase(action))
+    else if ("go back to sleep".equalsIgnoreCase(action))
     {
-      tellMoreStory(
-          "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
+      tellMoreStory("You go back to sleep and end up in a Wonder land.");
       String input = askAQuestion("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
       if ("toilet".equalsIgnoreCase(input))
       {
