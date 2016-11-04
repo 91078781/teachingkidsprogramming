@@ -24,11 +24,12 @@ public class ChooseYourOwnAdventure_02
     }
     else if ("go back to sleep".equalsIgnoreCase(action))
     {
-      tellMoreStory("You go back to sleep and end up in a Wonder land.");
-      String input = askAQuestion("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
-      if ("toilet".equalsIgnoreCase(input))
+      tellMoreStory(
+          "You go back to sleep and end up in a Wonder land. You see a path ahead and a path to the right.");
+      String input = askAQuestion("Do you want to take the 'path ahead' or the 'path to the right' ?");
+      if ("path ahead".equalsIgnoreCase(input))
       {
-        pourIntoToilet();
+        adventureUpAhead();
       }
       else if ("backyard".equalsIgnoreCase(input))
         ;
@@ -60,14 +61,13 @@ public class ChooseYourOwnAdventure_02
       System.exit(0);
     }
   }
-  private static void pourIntoToilet()
+  private static void adventureUpAhead()
   {
-    MessageBox.showMessage(
-        "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
-    String action = askAQuestion("Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?");
-    if ("yes".equalsIgnoreCase(action))
+    MessageBox.showMessage("As you walk up ahead you find a box.");
+    String action = askAQuestion("Do you want to 'open it' or 'leave it alone'?");
+    if ("open it".equalsIgnoreCase(action))
     {
-      tellMoreStory("Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!");
+      tellMoreStory("Awesome! You open the box to reveal a treasure");
     }
     else if ("heck yes".equalsIgnoreCase(action))
     {
