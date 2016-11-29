@@ -1,5 +1,7 @@
 package org.teachingkidsprogramming.section06modelviewcontroller;
 
+import org.teachingextensions.logo.utils.EventUtils.MessageBox;
+
 public class AdLibs
 {
   public static void main(String[] args)
@@ -12,5 +14,6 @@ public class AdLibs
     //  Add the words '"Then I " + currentEdVerb + " " to the currentStory --#5
     //  Add the words "my " + currentBodyPart + ". " to the current story --#7
     //  Show the currentStory in a message box as a message --#1.1
+    MessageBox.showMessage("currentStory");
   }
 }
