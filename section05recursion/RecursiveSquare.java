@@ -10,12 +10,9 @@ public class RecursiveSquare
     Tortoise.show();
     Tortoise.getBackgroundWindow().setBackground(PenColors.Greens.DarkGreen);
     Tortoise.setPenColor(PenColors.Yellows.Gold);
-    //
     Tortoise.setSpeed(10);
     double length = 100.0;
-    //  MakeASquare with the current length(recipe below) --#11.4
     makeASquare(length);
-    //
     makeASquare(length);
   }
   private static void makeASquare(double length)
