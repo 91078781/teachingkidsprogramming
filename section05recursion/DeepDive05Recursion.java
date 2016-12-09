@@ -68,8 +68,8 @@ public class DeepDive05Recursion
   public void getWhatsLast() throws Exception
   {
     List<String> messages = Arrays.asList("Hello", "World!", "How", "Are", "You");
-    String result = messages.get(You);
-    Assert.assertEquals(4, result);
+    String result = messages.get(4);
+    Assert.assertEquals("You", result);
   }
   @Test
   public void whatIsLastNow() throws Exception
@@ -89,19 +89,19 @@ public class DeepDive05Recursion
   public void getThirdCoin() throws Exception
   {
     int[] coins = {1, 5, 10, 25};
-    Assert.assertEquals(10, coins[____]);
+    Assert.assertEquals(10, coins[2]);
   }
   @Test
   public void whichCoinIsSecond() throws Exception
   {
     int[] coins = {1, 5, 10, 25};
-    Assert.assertEquals(____, coins[1]);
+    Assert.assertEquals(5, coins[1]);
   }
   @Test
   public void putAFiftyCentPieceFirst() throws Exception
   {
     int[] coins = {1, 5, 10, 25};
-    coins[0] = ____;
+    coins[0] = 50;
     Assert.assertEquals(50, coins[0]);
   }
   /**
