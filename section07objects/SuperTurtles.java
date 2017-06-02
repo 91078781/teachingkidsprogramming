@@ -18,16 +18,13 @@ public class SuperTurtles
   {
     makeSpeedyTurtle();
     makeSlowTurtle();
-    //  makeCrazyTurtle (recipe below) --#6.0
     makeCrazyTurtle();
   }
   private void makeCrazyTurtle()
   {
-    //  ------------- Recipe for makeCrazyTurtle --#5.1
     Turtle crazyTurtle = new Turtle();
     mtw.addAndShowTurtle(crazyTurtle);
     crazyTurtle.drawLightning(55);
-    //  ------------- End of makeCrazyTurtle --#5.2
   }
   private void makeSlowTurtle()
   {
